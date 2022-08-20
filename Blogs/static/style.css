@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ; 
+    background-image: linear-gradient(red,yellow);
+    color: cadetblue;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    border-bottom: 10px solid rgb(134, 7, 151);
+}
+body{
+  display: grid;
+  place-items: center;
+ background-image: repeating-radial-gradient(rgb(0, 225, 255),rgb(243, 65, 228));
+border: 10px solid black;
+}
+.container{
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-wrap:wrap ;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 15px;
+  /* gap: 2rem; */
+}
+
+img {
+  /* max-width: 100%; */
+  display: block;
+  object-fit: cover;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-image: repeating-radial-gradient(rgb(0, 225, 255),rgb(243, 65, 228));
+
+}
+.card__body{
+  display: flex;
+  display: inline;
+}
+.user {
+  display: flex;
+  gap: .5rem;
+}
+.card__footer{
+  display: flex;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ADDRESS</th>
+            <th>Action</th>
+        </tr>
+        {% for student in all_student %}
+        <tr>
+            <td> {{ student.id}}</td>
+            <td> {{ student.student_name}}</td>
+            <td> {{ student.age}}</td>
+            <td> {{ student.address}}</td>
+            <td>
+                <a href="update"><button>UPDATE</button></a>
+                <a href="delete"><button>DELETE</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+   
+</body>
+</html>

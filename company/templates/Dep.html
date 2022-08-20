@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>COMPANY</h1>
+    <a href="{% url 'home' %}"> +ADD NEW </a>
+    <table border="10">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>Number of Members</th>
+            <th>ACTION</th>
+        </tr>
+        {% for Department in all_Department %}
+        <tr>
+            <td>{{Department.Department_id}}</td>
+            <td>{{Department.Department_name}}</td>
+            <td id="no">{{Department.Number}}</td>
+            <td>
+                <a href="upadte"><button class="btn">UPDATE</button></a>
+                <a href="delete"><button class="btn">DELETE</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> 
+</body>
+</html>

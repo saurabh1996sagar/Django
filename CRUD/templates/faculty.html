@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here's faculty data</h1>
+    <a href="{% url 'addFaculty' %}">+ Add New </a>
+    <table border="5">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>QUALIFICATION</th>
+            <th>SALARY</th>
+            <th>ACTION</th>
+        </tr> 
+        {%  for faculty in all_faculty %}
+        <tr>
+            <td>{{faculty.id}}</td>
+            <td>{{faculty.faculty_name}}</td>
+            <td>{{faculty.qualification}}</td>
+            <td>{{faculty.salary}}</td>
+            <td>
+                <a href="update/{{ faculty.id }}"><button>UPDATE</button></a>
+                <a href="delete/{{ faculty.id }}"><button>DELETE</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="add-new-faculty" method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="">Enter Name</label>
+            <input type="text" name="name" id="">
+        </div>
+        <div>
+            <label for="">Enter Qualification</label>
+            <input type="text" name="qualification" id="">
+        </div>
+        <div>
+            <label for="">Enter Salary</label>
+            <input type="text" name="salary" id="">
+        </div>
+        <p>
+            <input type="submit" value ="Enter">
+        </p>
+    </form>
+Name : {{ name }} <br>
+Qualification : {{qualification}} <br>
+Salary : {{ salary }} <br> 
+</body>
+</html>

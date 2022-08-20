@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-image: linear-gradient(red,yellow);
+            color: blue;
+            display: flex;
+            text-decoration: center;
+            justify-content: center;
+        }
+        form{
+            background-image: linear-gradient(black,white);
+            /* display: grid; */
+            padding-left: 538px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+           color: whitesmoke;
+
+        }
+        .name{
+            padding-left: 538px;
+            background-image: radial-gradient(blue,pink);
+        }
+        input{
+            background-color: black;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>SAURABH SAGAR</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ login_form.as_p }}
+       <input type="submit" value="Login">
+    </form>
+
+    <!-- <div class="name">
+        <b>USERNAME -></b>{{ name }}
+        <br>
+       <b>PASSWORD -></b>  {{ pass }} <br>
+        <b>AGE -></b> {{ aga }}
+    </div> -->
+</body>
+</html>

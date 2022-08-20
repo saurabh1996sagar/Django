@@ -1,0 +1,22 @@
+h1{
+    color: red;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+}
+th,td{
+    padding: 10px;
+}
+.btn{
+    padding: 5px;
+}
+#no{
+    text-align: center;
+}
+
+
+
+

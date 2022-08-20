@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Poppins:wght@900&family=Redressed&display=swap');
+:root {
+    --main-bg-color: rgb(94, 45, 79);
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    background: var(--main-bg-color)
+}
+.container{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#topoffer{
+    margin-top: 45px;
+}
+#grocery{
+    margin-top: 45px;
+}
+#Fashion{
+    margin-top: 45px;
+}
+#electronics{
+    margin-top: 45px;
+}
+#travel{
+    margin-top: 45px;
+}
+/* .mySlides {
+    display:none;
+} */
+.container1{
+    min-height: calc(100vh - 58px - 12vh);
+}
+nav{
+    display: flex;
+}
+nav ul{
+    height: 58px;
+   display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+ .logo img{
+     width: 88px;
+     padding: 0 25px;
+
+}
+/* .card h2{
+    padding-top: 5px;
+    padding-bottom: 5px
+} */
+.card{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    margin: 0 25px;
+}
+.card-item :hover{
+    background-color: blue;
+    color: white;
+    cursor: progress;
+    font-size: large;
+}
+nav ul li{
+    padding: 0 23px;
+     list-style: none; 
+}
+nav ul li a {
+    color: white;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color: rgb(253, 253, 194);
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 300px;
+    height: 27px;
+      margin: 0 16px 0 20px;
+      border-radius: 5px;
+      padding-left: 20px;
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+   color: white ;
+   font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Redressed', cursive;
+font-size: 1.25em;
+}
+.card-item img{
+    height: 12vh;
+    width: 6vw;
+}

@@ -1,0 +1,41 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 5px;
+   background: #c121bc;
+   color: white;
+   border-radius: 15px;
+   cursor: pointer;
+}
+.btn:hover{
+background-color: aliceblue;
+color: black;
+font-weight: bolder;
+}
+.container1 .slider img{
+    height: 55vh;
+    width: 100%;
+    /* margin-left: 345px;
+    margin-top: 5px; */
+}
+.offer :hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}    
+
+#my-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#my-2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#my-3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
